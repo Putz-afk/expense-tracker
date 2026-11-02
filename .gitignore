@@ -1,0 +1,8 @@
+# Build output
+expense.exe
+
+# Local databases
+*.db
+*.exe
+*.sqlite
+.env
