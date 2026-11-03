@@ -31,6 +31,37 @@ var migrations = []string{
 
 	CREATE INDEX idx_expenses_date     ON expenses(date);
 	CREATE INDEX idx_expenses_category ON expenses(category);`,
+
+	// 2: expenses found in bank emails that wait for review, and how far we
+	// have read the mailbox. message_id is UNIQUE so an email is saved once,
+	// and rejected rows stay (status 'rejected') so a re-fetch can't bring
+	// them back.
+	`CREATE TABLE pending_expenses (
+		id         INTEGER PRIMARY KEY AUTOINCREMENT,
+		message_id TEXT    NOT NULL UNIQUE,
+		ref        TEXT    NOT NULL DEFAULT '',
+		kind       TEXT    NOT NULL DEFAULT '',
+		payee      TEXT    NOT NULL DEFAULT '',
+		subject    TEXT    NOT NULL DEFAULT '',
+		amount     INTEGER NOT NULL CHECK (amount > 0),
+		fee        INTEGER NOT NULL DEFAULT 0 CHECK (fee >= 0 AND fee <= amount),
+		category   TEXT    NOT NULL REFERENCES categories(name),
+		date       TEXT    NOT NULL,
+		status     TEXT    NOT NULL DEFAULT 'pending'
+		                   CHECK (status IN ('pending', 'accepted', 'rejected')),
+		created_at TEXT    NOT NULL DEFAULT (datetime('now'))
+	);
+
+	CREATE INDEX idx_pending_status ON pending_expenses(status);
+
+	-- A single row (id is always 1). uid_validity 0 means "never synced".
+	CREATE TABLE mail_state (
+		id           INTEGER PRIMARY KEY CHECK (id = 1),
+		uid_validity INTEGER NOT NULL,
+		last_uid     INTEGER NOT NULL
+	);
+
+	INSERT INTO mail_state (id, uid_validity, last_uid) VALUES (1, 0, 0);`,
 }
 
 // migrate brings the database up to the latest schema version.

@@ -1,0 +1,86 @@
+Date: Mon, 2 Nov 2026 12:19:26 +0700 (ICT)
+From: Bank BRI <BankBRI@bri.co.id>
+To: user@example.com
+Message-ID: <1688647629.8972004.1793596766347@GTI-SMSNotifyDB>
+Subject: Pembelian QRIS Berhasil
+MIME-Version: 1.0
+Content-Type: text/html; charset=Cp1252
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html lang=3D"id"><head><meta charset=3D"UTF-8"><meta name=
+=3D"viewport" content=3D"width=3Ddevice-width,initial-scale=3D1"><title>BRI=
+mo Transaction Details</title><style>body{font-family:Arial,sans-serif;marg=
+in:0;padding:0}.box{background-color:#fff}.email-container{max-width:600px;=
+margin:0 auto;background-color:#fff;padding:20px;border:px solid #ddd}.foot=
+er,.header{text-align:center;background-color:#00458a;color:#fff;padding:25=
+px 50px 50px 10px}.content{padding:20px;color:#333;background-color:#f7f7f7=
+}.content p{line-height:1.5}.content table{width:100%;border-collapse:colla=
+pse;margin-bottom:20px}.content td,.content th{text-align:left;padding:10px=
+}.content .info{padding:10px;margin-bottom:20px;line-height:1.5}.content .i=
+nfo p{margin:0}.content .contact{padding:10px;line-height:1.5}.content .con=
+tact p{margin:5px 0}.section-border{border-bottom:2px solid #ddd;margin-bot=
+tom:10px}.box{border:1px solid #ddd;border-radius:10px;padding:15px;margin-=
+bottom:20px}.content .box .rounded-box .details{line-height:0}.total-transa=
+ksi{text-align:center;font-size:1.5em;color:#00458a;font-weight:700;margin-=
+bottom:20px}.rounded-box{border:1px solid #ddd;border-radius:10px;padding:1=
+5px;margin-bottom:20px;display:flex;flex-direction:column}.rounded-box .hea=
+der{display:flex;justify-content:space-between;align-items:center;margin-bo=
+ttom:15px}.rounded-box img{width:40px;height:40px;margin-right:15px}.rounde=
+d-box .details{display:flex;align-items:center}.rounded-box .details div{ma=
+rgin-left:15px}.tujuan{font-size:1em;color:#00458a;font-weight:700;margin-b=
+ottom:5px}.name{font-size:1.2em;font-weight:700;margin-bottom:5px}.address,=
+.unit{margin-bottom:5px}.detail_destination p{line-height:.4}</style></head=
+><body><div class=3D"email-container"><div class=3D"header"><img class=3D"i=
+mg_header" align=3D"left" src=3D"https://s3.brimo.bri.co.id/brimo-asset/ema=
+il-notif/logo_bri_white.png" alt=3D"bri-white-logo.png" width=3D"77px" heig=
+ht=3D"32px"></div><div class=3D"content"><p>Halo {REDACTED NAME},</p><p=
+>Berikut detail transaksi kamu di BRImo:</p><div class=3D"box"><div class=
+=3D"total-transaksi">Total Transaksi<br>22.000</div><div class=3D"rounded-b=
+ox"><div class=3D"tujuan">Tujuan</div><div class=3D"details"><img src=3D"ht=
+tps://s3.brimo.bri.co.id/brimo-asset/qris/Product.png" alt=3D"Product.png">=
+<div class=3D"detail_destination"><p>WARUNG MAKAN ELOK</p><p>QRIS Bayar</p>=
+<p>9360000210044156847</p></div></div></div><table><tr><th>Nomor Referensi<=
+/th><td>243791195082</td></tr><tr><th>Tanggal Transaksi</th><td>02 Nov 2026=
+, 12:18:14 WIB</td></tr><tr><th>Rekening Sumber Dana</th><td>3238 **** ****=
+ 503</td></tr><tr><th>Nama Sumber Dana</th><td>{REDACTED NAME}</td></tr=
+><tr><th>Jenis Transaksi</th><td>QRIS Bayar</td></tr><tr><th>Nama Merchant<=
+/th><td>WARUNG MAKAN ELOK</td></tr><tr><th>Lokasi Merchant</th><td>JAKARTA =
+BARAT</td></tr><tr><th>Nama Penerbit</th><td>BRI</td></tr><tr><th>Nama Peng=
+akuisisi</th><td>BNI</td></tr><tr><th>Kode PAN Pelanggan</th><td>9360000210=
+044156847</td></tr><tr><th>Merchant PAN</th><td>936000091504561905</td></tr=
+><tr><th>ID Terminal</th><td>A01</td></tr><tr><th>Catatan</th><td>-</td></t=
+r></table><div class=3D"section-border"></div><table><tr><th>Nominal</th><t=
+d>Rp22.000</td></tr><tr><th>Biaya Admin</th><td>Rp0</td></tr></table><div c=
+lass=3D"info"><p><strong>INFORMASI:</strong></p><p><br>Biaya Termasuk PPN (=
+Apabila Dikenakan/Apabila Ada)</p><p>PT. Bank Rakyat Indonesia (Persero) Tb=
+k.</p><p>Kantor Pusat BRI - Jakarta Pusat</p><p>NPWP : 01.001.608.7-093.000=
+</p></div></div><ul class=3D"contact"><p>Semoga info ini bermanfaat buat ka=
+mu, ya.</p><p>Butuh info lebih lanjut? Hubungi kami melalui:</p><li style=
+=3D"margin-left:20px">Pusat Bantuan di BRImo</li><li style=3D"margin-left:2=
+0px">Contact Center BRI 1500017</li><li style=3D"margin-left:20px">WhatsApp=
+ 0812-12-14017</li><li style=3D"margin-left:20px">Email callbri@bri.co.id</=
+li><li style=3D"margin-left:20px">Website bri.co.id</li></ul><p>*Jika kamu =
+berada di luar negeri, kontak kami melalui Pusat Bantuan.</p><p>Terima kasi=
+h sudah menggunakan BRImo.</p><p>Hormat kami,<br>Bank Rakyat Indonesia</p><=
+div class=3D"footer"><table><tr><td style=3D"padding:30px 30px 30px 30px"><=
+table border=3D"0" cellpadding=3D"3" cellspacing=3D"3" width=3D"100%"><tr><=
+td style=3D"color:#fff!important" width=3D"50%">Download Aplikasi BRImo</td=
+><td></td><td align=3D"center" style=3D"color:#fff!important" width=3D"50%"=
+>Hubungi Kami</td></tr></table><table border=3D"0" cellpadding=3D"3" cellsp=
+acing=3D"3" width=3D"100%"><tr><td style=3D"color:#fff!important" width=3D"=
+50%"><p><a href=3D"https://apps.apple.com/id/app/brimo-bri/id1439730817" ta=
+rget=3D"_blank"><img alt=3D"apsstore" src=3D"https://s3.brimo.bri.co.id/bri=
+mo-asset/brimo-asset/receipt/images/appstore.png" width=3D"133px" height=3D=
+"41px"></a><br><a href=3D"https://play.google.com/store/apps/details?id=3Di=
+d.co.bri.brimo" target=3D"_blank"><img alt=3D"gplay" src=3D"https://s3.brim=
+o.bri.co.id/brimo-asset/brimo-asset/receipt/images/gplay.png" width=3D"133p=
+x" height=3D"41px"></a></p></td><td></td><td align=3D"center" style=3D"colo=
+r:#fff!important" width=3D"50%">Kontak BRI<a href=3D"tel:+621500017">150001=
+7</a><br>Email BRI<a href=3D"mailto:callbri@bri.co.id">callbri@bri.co.id</a=
+></td></tr></table><hr style=3D"height:1.5px;border:none;color:#fff;backgro=
+und-color:#fff"><table border=3D"0" cellpadding=3D"3" cellspacing=3D"3" wid=
+th=3D"100%"><tr><td align=3D"center" style=3D"color:#fff;text-align:center;=
+width:100%"><p style=3D"margin:0 auto">Email ini dikirim secara otomatis ol=
+eh sistem.<br>Mohon untuk tidak membalas.<br><br>=A9 2023 PT.Bank Rakyat In=
+donesia (Persero) Tbk. | All Rights Reserved.</p></td></table></td></tr></t=
+able></div></div></div></body></html>

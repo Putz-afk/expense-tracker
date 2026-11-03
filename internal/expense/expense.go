@@ -33,6 +33,43 @@ type Expense struct {
 	Date     time.Time // date only; the time-of-day part is always midnight UTC
 }
 
+// PendingStatus says where a pending expense is in the review flow.
+type PendingStatus string
+
+const (
+	StatusPending  PendingStatus = "pending"
+	StatusAccepted PendingStatus = "accepted"
+	StatusRejected PendingStatus = "rejected"
+)
+
+// Pending is a spending event found in a bank email that the user has not
+// reviewed yet. Accepting it turns it into an Expense.
+type Pending struct {
+	ID        int64
+	MessageID string // the email's Message-ID; unique, so one email is saved once
+	Ref       string // the bank's reference number
+	Kind      string // e.g. "QRIS Bayar"
+	Payee     string // merchant or recipient
+	Subject   string // the email subject, kept to recognise the mail later
+	Amount    int64  // whole rupiah, fee included, always > 0
+	Fee       int64  // the part of Amount that was an admin fee
+	Category  string // suggested category
+	Date      time.Time
+	Status    PendingStatus
+}
+
+// Validate checks the fields AddPending needs before it can save a Pending.
+func (p Pending) Validate() error {
+	if p.MessageID == "" {
+		return fmt.Errorf("%w: message id is required", ErrInvalidExpense)
+	}
+	if p.Fee < 0 || p.Fee > p.Amount {
+		return fmt.Errorf("%w: fee must be between zero and the amount", ErrInvalidExpense)
+	}
+	// The rest are the same rules as for a real expense.
+	return Expense{Amount: p.Amount, Category: p.Category, Date: p.Date}.Validate()
+}
+
 // Filter narrows down which expenses List returns. The zero value matches everything.
 type Filter struct {
 	Month    time.Time // first day of the month to match; zero = any month

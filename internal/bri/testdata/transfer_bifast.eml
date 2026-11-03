@@ -1,0 +1,116 @@
+Date: Sat, 24 Oct 2026 23:10:16 +0700 (ICT)
+From: Bank BRI <BankBRI@bri.co.id>
+To: user@example.com
+Message-ID: <33605008.20802912.1792858216431@GTI-SMSNotifyDB>
+Subject: Pemindahan Dana Bank Lain Dalam Negeri
+MIME-Version: 1.0
+Content-Type: text/html; charset=Cp1252
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html><head><meta charset=3D"utf-8"><meta http-equiv=3D"X-UA=
+-Compatible" content=3D"IE=3Dedge"><title>Transaction</title><meta name=3D"=
+viewport" content=3D"width=3Ddevice-width,initial-scale=3D1"><style>#html_b=
+ody{font-family:\'Avenir Next\';color:#333!important}#container{margin:20px=
+ auto;max-width:410px}span.preheader{display:none;font-size:1px}table.ticke=
+t{font-size:11px;background-color:#fff!important}a{color:#fff!important;tex=
+t-decoration:none!important}hr.dotted{border-top:2px dotted #d9e7e8}#shadow=
+{-moz-box-shadow:10px 10px 5px #888;-webkit-box-shadow:10px 10px 5px #888;b=
+ox-shadow:10px 10px 5px #888}.blacknumber a{color:#000!important;text-decor=
+ation:none}</style></head><body id=3D"html_body"><div id=3D"container"><tab=
+le align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"border:1px solid #ccc;border-collapse:collapse"><tr><td =
+align=3D"left" bgcolor=3D"#00529c" style=3D"padding:15px 0 15px 10px;color:=
+#00529c"><img src=3D"https://s3.brimo.bri.co.id/brimo-asset/email-notif/log=
+o_bri_white.png" width=3D"100px" height=3D"25px"></td></tr><tr><td bgcolor=
+=3D"#eef2f6" style=3D"padding:40px 30px 40px 30px"><table border=3D"0" widt=
+h=3D"100%" cellspacing=3D"0" cellpadding=3D"2"><tbody><tr><td style=3D"colo=
+r:#333">Halo,<strong>{REDACTED NAME}</strong></td></tr><tr><td></td></t=
+r><tr><td style=3D"color:#333;font-size:11px">Berikut ini adalah informasi =
+transaksi yang telah Anda lakukan di Aplikasi BRImo.</td></tr></tbody></tab=
+le><br><table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"=
+0"><tr><td><img src=3D"https://s3.brimo.bri.co.id/brimo-asset/email-notif/h=
+eader_tickets.png" style=3D"display:block" width=3D"100%"></td></tr></table=
+><table class=3D"ticket" border=3D"0" width=3D"100%" cellspacing=3D"0" cell=
+padding=3D"10"><tbody><tr><td colspan=3D"3" style=3D"padding:0;color:#333;f=
+ont-size:16px;font-weight:700" align=3D"center">Transaksi Berhasil</td></tr=
+><tr><td align=3D"left" valign=3D"top" width=3D"260">Tanggal</td><td style=
+=3D"font-size:0;line-height:0" width=3D"20"> </td><td style=3D"font-weight:=
+700" align=3D"right" valign=3D"top" width=3D"260">24 Oktober 2026 &#44; 23:=
+09:08 WIB</td></tr><tr><td align=3D"left" valign=3D"top" width=3D"260">Nomo=
+r Referensi</td><td style=3D"font-size:0;line-height:0" width=3D"20"> </td>=
+<td style=3D"font-weight:700" align=3D"right" valign=3D"top" width=3D"260">=
+<span class=3D"blacknumber">238223860768</span></td></tr><tr><td colspan=3D=
+"3" align=3D"center"><hr style=3D"border:1px dashed #d9e7e8!important"></td=
+></tr><tr><td align=3D"left" valign=3D"top" width=3D"260">Sumber Dana</td><=
+td style=3D"font-size:0;line-height:0" width=3D"20"> </td><td style=3D"font=
+-weight:700" align=3D"right" valign=3D"top" width=3D"260">{REDACTED NAME=
+}<br>3238 **** **** 503</td></tr><tr><td align=3D"left" valign=3D"top" wid=
+th=3D"260">Jenis Transaksi</td><td style=3D"font-size:0;line-height:0" widt=
+h=3D"20"> </td><td style=3D"font-weight:700" align=3D"right" valign=3D"top"=
+ width=3D"260">Transfer BI-FAST</td></tr><tr><td align=3D"left" valign=3D"t=
+op" width=3D"260">Bank Tujuan</td><td style=3D"font-size:0;line-height:0" w=
+idth=3D"20"> </td><td style=3D"font-weight:700" align=3D"right" valign=3D"t=
+op" width=3D"260">BANK BNI</td></tr><tr><td align=3D"left" valign=3D"top" w=
+idth=3D"260">Nomor Tujuan</td><td style=3D"font-size:0;line-height:0" width=
+=3D"20"> </td><td style=3D"font-weight:700" align=3D"right" valign=3D"top" =
+width=3D"260"><span class=3D"blacknumber">1234 5678 90</span></td></tr><tr>=
+<td align=3D"left" valign=3D"top" width=3D"260">Nama Tujuan</td><td style=
+=3D"font-size:0;line-height:0" width=3D"20"> </td><td style=3D"font-weight:=
+700" align=3D"right" valign=3D"top" width=3D"260">BUDI SANTOSO</td=
+></tr><tr><td align=3D"left" valign=3D"top" width=3D"260">Alias Penerima</t=
+d><td style=3D"font-size:0;line-height:0" width=3D"20"> </td><td style=3D"f=
+ont-weight:700" align=3D"right" valign=3D"top" width=3D"190"><span class=3D=
+"blacknumber">-</span></td></tr><tr><td align=3D"left" valign=3D"top" width=
+=3D"260">Catatan</td><td style=3D"font-size:0;line-height:0" width=3D"20"> =
+</td><td style=3D"font-weight:700" align=3D"right" valign=3D"top" width=3D"=
+260"><span class=3D"blacknumber">-</span></td></tr><tr><td align=3D"left" v=
+align=3D"top" width=3D"260">Tujuan Transaksi</td><td style=3D"font-size:0;l=
+ine-height:0" width=3D"20"> </td><td style=3D"font-weight:700" align=3D"rig=
+ht" valign=3D"top" width=3D"260">Lainnya</td></tr><tr><td colspan=3D"3" ali=
+gn=3D"center"><hr style=3D"border:1px dashed #d9e7e8!important"></td></tr><=
+tr><td align=3D"left" valign=3D"top" width=3D"260">Nominal</td><td style=3D=
+"font-size:0;line-height:0" width=3D"20"> </td><td style=3D"font-weight:700=
+" align=3D"right" valign=3D"top" width=3D"260">Rp55.000</td></tr><tr><td al=
+ign=3D"left" valign=3D"top" width=3D"260">Biaya Admin</td><td style=3D"font=
+-size:0;line-height:0" width=3D"20"> </td><td style=3D"font-weight:700" ali=
+gn=3D"right" valign=3D"top" width=3D"260">Rp2.500</td></tr><tr><td colspan=
+=3D"3" style=3D"padding:0" align=3D"center"><img src=3D"https://s3.brimo.br=
+i.co.id/brimo-asset/email-notif/dotted2.PNG" width=3D"100%" style=3D"displa=
+y:block"></td></tr><tr><td align=3D"left" valign=3D"top" style=3D"font-weig=
+ht:700;color:#333;font-size:16px" width=3D"260"><strong>Total</strong></td>=
+<td style=3D"font-size:0;line-height:0" width=3D"20"> </td><td style=3D"fon=
+t-weight:700;color:#00529c;font-size:16px" align=3D"right" valign=3D"top" w=
+idth=3D"260"><strong>Rp57.500</strong></td></tr></tbody></table><table bord=
+er=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"10"><td style=3D"p=
+adding:0" align=3D"center" colspan=3D"3"><img style=3D"display:block" src=
+=3D"https://s3.brimo.bri.co.id/brimo-asset/email-notif/footer.png" width=3D=
+"100%" height=3D"50px"></td></table><table border=3D"0" width=3D"100%" cell=
+spacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"color:#333;font-siz=
+e:11px;font-family:\'Avenir Next\'"><p align=3D"justify"><br>Semoga informa=
+si ini dapat bermanfaat bagi Anda. Untuk informasi lebih lanjut, silahkan m=
+enghubungi kami melalui fasilitas Hubungi Kami di Aplikasi BRImo, atau mela=
+lui Call Center di nomor 1500017 atau<span class=3D"blacknumber">+62-21-150=
+0017</span>jika Anda berada di luar negeri,<br><br>Dengan senang hati kami =
+akan melayani Anda<br>Terima Kasih<br><br>Hormat Kami,<br>Bank BRI</p></td>=
+</tr></tbody></table></td></tr><tr><td bgcolor=3D"#00529c" style=3D"padding=
+:30px 30px 30px 30px"><table border=3D"0" cellpadding=3D"3" cellspacing=3D"=
+3" width=3D"100%"><tr><td style=3D"color:#fff!important;font-size:11px" wid=
+th=3D"50%">Download Aplikasi BRIMO</td><td></td><td align=3D"left" style=3D=
+"color:#fff!important;font-size:11px" width=3D"50%">Hubungi Kami</td></tr><=
+/table><table border=3D"0" cellpadding=3D"3" cellspacing=3D"3" width=3D"100=
+%"><tr><td style=3D"color:#fff;font-size:11px" width=3D"50%"><p><a href=3D"=
+https://apps.apple.com/id/app/brimo-bri/id1439730817" target=3D"_blank"><im=
+g alt=3D"apsstore" src=3D"https://s3.brimo.bri.co.id/brimo-asset/email-noti=
+f/appstore.png" width=3D"72px" height=3D"25px"></a><a href=3D"https://play.=
+google.com/store/apps/details?id=3Did.co.bri.brimo" target=3D"_blank"><img =
+alt=3D"gplay" src=3D"https://s3.brimo.bri.co.id/brimo-asset/email-notif/gpl=
+ay.png" width=3D"72px" height=3D"25px"></a></p></td><td></td><td align=3D"l=
+eft" style=3D"color:#fff!important;font-size:11px" width=3D"50%">Kontak BRI=
+ <a href=3D"tel:+621500017">1500017</a><br>Email BRI<a href=3D"mailto:callb=
+ri@bri.co.id">callbri@bri.co.id</a></td></tr></table><hr style=3D"height:1.=
+5px;border:none;color:#849fbd;background-color:#849fbd"><table border=3D"0"=
+ cellpadding=3D"3" cellspacing=3D"3" width=3D"100%"><tr><td align=3D"center=
+" style=3D"color:#849fbd;font-size:11px" width=3D"100%"><p>Surat ini dihasi=
+lkan oleh komputer dan tidak perlu dijawab kembali ke alamat email di atas.=
+<br>=A9 2021 PT.Bank Rakyat Indonesia (Persero) Tbk. | All Rights Reserved.=
+</p></td></table></td></tr></table></div></body></html>

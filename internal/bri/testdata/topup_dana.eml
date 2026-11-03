@@ -1,0 +1,236 @@
+Date: Mon, 2 Nov 2026 20:16:53 +0700 (ICT)
+From: Bank BRI <BankBRI@bri.co.id>
+To: user@example.com
+Message-ID: <1524232943.20461274.1793625413410@GTI-SMSNotifyDB>
+Subject: Top Up DANA Berhasil
+MIME-Version: 1.0
+Content-Type: text/html; charset=Cp1252
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=3D"utf-8">
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+    <title>Email Notif Revamp</title>
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width,initial-scale=
+=3D1">
+    <style>
+      #html_body {
+        font-family: 'Avenir Next';
+        color: #333 !important
+      }
+
+      #container {
+        margin: 20px auto;
+        max-width: 410px
+      }
+
+      span.preheader {
+        display: none;
+        font-size: 1px
+      }
+
+      table.ticket {
+        font-size: 12px;
+        background-color: #fff !important;
+        border: .5px solid #d9e7e8;
+        border-radius: 10px;
+        background-image: url(https://s3.brimo.bri.co.id/brimo-asset/receip=
+t/images/pattern_bri.png);
+        background-size: contain;
+        background-repeat: repeat
+      }
+
+      table.ticket td,
+      table.ticket th {
+        border: 0 solid #d9e7e8;
+        border-radius: 10px
+      }
+
+      table.ticket2 {
+        font-size: 12px;
+        border: .5px solid #d9e7e8;
+        border-radius: 10px
+      }
+
+      table.ticket2 td,
+      table.ticket2 th {
+        border: 0 solid #d9e7e8;
+        border-radius: 10px
+      }
+
+      a {
+        color: #fff !important;
+        text-decoration: none !important
+      }
+
+      hr.dotted {
+        border-top: 2px dotted #d9e7e8
+      }
+
+      #shadow {
+        -moz-box-shadow: 10px 10px 5px #888;
+        -webkit-box-shadow: 10px 10px 5px #888;
+        box-shadow: 10px 10px 5px #888
+      }
+
+      .blacknumber a {
+        color: #000 !important;
+        text-decoration: none
+      }
+
+      .circle {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background-size: cover;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: .5px solid #d9e7e8
+      }
+
+      .circle p {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 200px
+      }
+    </style>
+  </head>
+  <body id=3D"html_body">
+    <div id=3D"container">
+      <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" width=3D"100%" style=3D"border:1px solid #ccc;border-collapse:collapse"=
+>
+        <tr>
+          <td align=3D"left" bgcolor=3D"#1078ca" style=3D"padding:25px 0 15=
+px 20px;color:#1078ca">
+            <img src=3D"https://s3.brimo.bri.co.id/brimo-asset/receipt/imag=
+es/logo_bri.png" width=3D"90px" height=3D"35px">
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor=3D"#1078ca" style=3D"padding:10px 30px 40px 20px">
+            <table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpaddin=
+g=3D"2">
+              <tbody>
+                <tr>
+                  <td style=3D"color:#fff;font-size:14px">Halo, <strong>TEST USER</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td style=3D"color:#fff!important;font-size:14px">Berikut=
+ ini adalah informasi transaksi yang telah Anda lakukan di Aplikasi BRImo. =
+<br>
+                    <br>
+                    <strong>02 November 2026, 20:15:57 WIB</strong>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style=3D"padding:0 30px 40px 30px;background-image:linear-gra=
+dient(0deg,#f8f9f9 70%,#1078ca 30%)">
+            <table class=3D"ticket" border=3D"1" width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"10">
+              <tbody>
+                <tr>
+                  <td colspan=3D"3" style=3D"padding:0 0 0 90;color:#333;fo=
+nt-size:12px;font-weight:700" align=3D"center">Total Transaksi <br>
+                    <br>
+                    <strong style=3D"font-weight:700;color:#00529c;font-siz=
+e:18px">Rp400.250</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td align=3D"left" valign=3D"top" width=3D"260">No. Ref</=
+td>
+                  <td style=3D"font-size:0;line-height:0" width=3D"20"> </t=
+d>
+                  <td style=3D"font-weight:700" align=3D"right" valign=3D"t=
+op" width=3D"260">
+                    <span class=3D"blacknumber">244159045031</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan=3D"3">
+                    <table class=3D"ticket2" border=3D"2" width=3D"100%" ce=
+llspacing=3D"0" cellpadding=3D"3">
+                      <tr>
+                        <td align=3D"left" valign=3D"top" width=3D"60">
+                          <div>
+                              <img src=3D"https://s3.brimo.bri.co.id/brimo-=
+asset/icon/vgame/email/logo_default_bri.png" style=3D"width: 50px;height: 5=
+0px">
+                          </div>
+                        </td>
+                        <td colspan=3D"3" align=3D"left" valign=3D"center" =
+width=3D"460">
+                          <strong>{REDACTED NAME}</strong>
+                          <br>BANK BRI <br>3238 **** **** 503
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan=3D"3" align=3D"center">
+                          <hr style=3D"border:1px solid #d9e7e8!important">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align=3D"left" valign=3D"top" width=3D"60">
+                          <div>
+                              <img src=3D"https://s3.brimo.bri.co.id/brimo-=
+asset/ewallet/ewallet_dana.png"  style=3D"width: 50px;height: 50px">
+                          </div>
+                        </td>
+                        <td colspan=3D"2" align=3D"left" valign=3D"center" =
+width=3D"460">
+                          <strong>DANA</strong>
+                          <br>DNID TEST USER <br>08XXXXXXXXXX
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align=3D"left" valign=3D"top" width=3D"260">Jenis Tra=
+nsaksi</td>
+                  <td style=3D"font-size:0;line-height:0" width=3D"20"> </t=
+d>
+                  <td style=3D"font-weight:700" align=3D"right" valign=3D"t=
+op" width=3D"260">DANA</td>
+                </tr>
+                <tr>
+                  <td align=3D"left" valign=3D"top" width=3D"260">Catatan</=
+td>
+                  <td style=3D"font-size:0;line-height:0" width=3D"20"> </t=
+d>
+                  <td style=3D"font-weight:700" align=3D"right" valign=3D"t=
+op" width=3D"260">-</td>
+                </tr>
+                <tr>
+                  <td colspan=3D"3" align=3D"center">
+                    <hr style=3D"border:1px dashed #d9e7e8!important">
+                  </td>
+                </tr>
+                <tr>
+                  <td align=3D"left" valign=3D"top" width=3D"260">Nominal</=
+td>
+                  <td style=3D"font-size:0;line-height:0" width=3D"20"> </t=
+d>
+                  <td style=3D"font-weight:700" align=3D"right" valign=3D"t=
+op" width=3D"260">Rp400.000</td>
+                </tr>
+                <tr>
+                  <td align=3D"left" valign=3D"top" width=3D"260">Biaya Adm=
+in</td>
+                  <td style=3D"font-size:0;line-height:0" width=3D"20"> </t=
+d>
+                  <td style=3D"font-weight:700" align=3D"right" valign=3D"t=
+op" width=3D"260">Rp250</td>

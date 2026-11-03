@@ -17,9 +17,24 @@ var (
 	ErrNotFound = errors.New("expense not found")
 )
 
+// execer is the part of *sql.DB and *sql.Tx that addExpense needs. Both types
+// have these methods, so Go lets either one be passed in without any
+// declaration saying so (interfaces are satisfied implicitly).
+type execer interface {
+	QueryRow(query string, args ...any) *sql.Row
+	Exec(query string, args ...any) (sql.Result, error)
+}
+
 // Add validates and saves a new expense, and returns it with its ID filled in.
 // The category is normalized (trimmed, lowercased) before it is checked.
 func (s *Store) Add(e expense.Expense) (expense.Expense, error) {
+	return addExpense(s.db, e)
+}
+
+// addExpense is Add's body. It takes an execer so AcceptPending can run it
+// inside a transaction (with one connection, calling s.Add there would wait
+// forever for the connection the transaction is holding).
+func addExpense(q execer, e expense.Expense) (expense.Expense, error) {
 	e.Category = expense.NormalizeCategory(e.Category)
 	e.Note = strings.TrimSpace(e.Note)
 
@@ -29,16 +44,11 @@ func (s *Store) Add(e expense.Expense) (expense.Expense, error) {
 
 	// The foreign key would also reject a bad category, but its error message
 	// is cryptic. Checking first lets us return a clear one.
-	var exists int
-	err := s.db.QueryRow("SELECT 1 FROM categories WHERE name = ?", e.Category).Scan(&exists)
-	if errors.Is(err, sql.ErrNoRows) {
-		return expense.Expense{}, fmt.Errorf("%w: %q", ErrUnknownCategory, e.Category)
-	}
-	if err != nil {
-		return expense.Expense{}, fmt.Errorf("check category: %w", err)
+	if err := checkCategory(q, e.Category); err != nil {
+		return expense.Expense{}, err
 	}
 
-	res, err := s.db.Exec(
+	res, err := q.Exec(
 		"INSERT INTO expenses (amount, category, note, date) VALUES (?, ?, ?, ?)",
 		e.Amount, e.Category, e.Note, e.Date.Format(expense.DateLayout),
 	)
@@ -103,13 +113,8 @@ func (s *Store) List(f expense.Filter) ([]expense.Expense, error) {
 
 	if f.Category != "" {
 		category := expense.NormalizeCategory(f.Category)
-		var exists int
-		err := s.db.QueryRow("SELECT 1 FROM categories WHERE name = ?", category).Scan(&exists)
-		if errors.Is(err, sql.ErrNoRows) {
-			return nil, fmt.Errorf("%w: %q", ErrUnknownCategory, category)
-		}
-		if err != nil {
-			return nil, fmt.Errorf("check category: %w", err)
+		if err := checkCategory(s.db, category); err != nil {
+			return nil, err
 		}
 		conds = append(conds, "category = ?")
 		args = append(args, category)
