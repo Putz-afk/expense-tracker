@@ -6,6 +6,7 @@ import (
 
 	"github.com/spf13/cobra"
 
+	"github.com/Putz-afk/expense-tracker/internal/inbox"
 	"github.com/Putz-afk/expense-tracker/internal/store"
 )
 
@@ -16,7 +17,10 @@ import (
 // never touches the database file.
 type Deps struct {
 	OpenStore func() (*store.Store, error)
-	Now       func() time.Time
+	// OpenSource returns the mailbox to read bank emails from. since limits a
+	// first-ever sync to mail received on or after that date.
+	OpenSource func(since time.Time) (inbox.Mailbox, error)
+	Now        func() time.Time
 }
 
 // NewRootCmd builds the top-level "expense" command and attaches the
@@ -40,5 +44,8 @@ func NewRootCmd(d Deps) *cobra.Command {
 	root.AddCommand(newDeleteCmd(d))
 	root.AddCommand(newSummaryCmd(d))
 	root.AddCommand(newCategoriesCmd(d))
+	root.AddCommand(newFetchCmd(d))
+	root.AddCommand(newInboxCmd(d))
+	root.AddCommand(newListenCmd(d))
 	return root
 }

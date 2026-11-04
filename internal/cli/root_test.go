@@ -2,11 +2,14 @@ package cli
 
 import (
 	"bytes"
+	"context"
+	"errors"
 	"path/filepath"
 	"strings"
 	"testing"
 	"time"
 
+	"github.com/Putz-afk/expense-tracker/internal/inbox"
 	"github.com/Putz-afk/expense-tracker/internal/store"
 )
 
@@ -18,6 +21,11 @@ var testNow = time.Date(2026, time.November, 2, 23, 30, 0, 0, time.UTC)
 type testEnv struct {
 	t    *testing.T
 	path string
+
+	source     inbox.Mailbox // the fake mailbox; nil means "credentials missing"
+	sourceErr  error         // returned by OpenSource instead, if set
+	gotSince   time.Time     // the date OpenSource was last called with
+	sourceOpen int           // how many times OpenSource was called
 }
 
 func newTestEnv(t *testing.T) *testEnv {
@@ -28,7 +36,18 @@ func newTestEnv(t *testing.T) *testEnv {
 func (e *testEnv) deps() Deps {
 	return Deps{
 		OpenStore: func() (*store.Store, error) { return store.Open(e.path) },
-		Now:       func() time.Time { return testNow },
+		OpenSource: func(since time.Time) (inbox.Mailbox, error) {
+			e.sourceOpen++
+			e.gotSince = since
+			if e.sourceErr != nil {
+				return nil, e.sourceErr
+			}
+			if e.source == nil {
+				return nil, errors.New("no mail source in this test")
+			}
+			return e.source, nil
+		},
+		Now: func() time.Time { return testNow },
 	}
 }
 
@@ -42,13 +61,20 @@ func (e *testEnv) run(args ...string) (string, error) {
 // runWithInput is like run but feeds input to the command as typed text.
 func (e *testEnv) runWithInput(input string, args ...string) (string, error) {
 	e.t.Helper()
+	return e.runContext(context.Background(), input, args...)
+}
+
+// runContext is like runWithInput but lets the test cancel the command, the
+// way Ctrl+C does for the real program.
+func (e *testEnv) runContext(ctx context.Context, input string, args ...string) (string, error) {
+	e.t.Helper()
 	var out bytes.Buffer
 	cmd := NewRootCmd(e.deps())
 	cmd.SetIn(strings.NewReader(input))
 	cmd.SetOut(&out)
 	cmd.SetErr(&out)
 	cmd.SetArgs(args)
-	err := cmd.Execute()
+	err := cmd.ExecuteContext(ctx)
 	return out.String(), err
 }
 
